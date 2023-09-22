@@ -13,6 +13,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
+      <link rel="icon" href="/portfolio/favicon.ico" sizes="any" />
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 min-w-screen">
         <Modal open={open} setOpen={setOpen} current={current} />
         <Header setDarkMode={setDarkMode} darkMode={darkMode} />

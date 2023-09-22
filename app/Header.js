@@ -9,9 +9,9 @@ import RevealImages from "./RevealImages";
 function Header({ setDarkMode, darkMode }) {
   return (
     <section className=" min-h-screen pb-6">
-      <nav className="py-10 sm:mb-12 flex justify-between dark:text-white ">
+      <nav className="py-10 sm:mb-12 flex justify-between dark:text-white  ">
         <h1 className="text-xl font-burtons hidden sm:block">Mkhuzo</h1>
-        <ul className="flex items-center justify-between w-full md:justify-normal">
+        <ul className="flex items-center justify-between w-full sm:w-fit md:justify-normal">
           <li>
             <BsFillMoonStarsFill
               onClick={() => setDarkMode(!darkMode)}
@@ -30,9 +30,9 @@ function Header({ setDarkMode, darkMode }) {
           </li>
         </ul>
       </nav>
-      <div className="text-center pb-8 px-2 sm:p-10">
+      <div className="text-center pb-8 px-2 md:p-10">
         <RevealImages>
-          <h2 className=" text-2xl sm:text-4xl lg:py-2 lg:h-20 text-teal-600 font-medium md:text-6xl dark:text-teal-400">
+          <h2 className=" text-2xl sm:text-3xl lg:py-2 lg:h-20 text-teal-600 font-medium md:text-4xl lg:text-6xl dark:text-teal-400">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter

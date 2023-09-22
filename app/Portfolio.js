@@ -120,7 +120,7 @@ function PortfolioItem({ item, handleClick }) {
         <Image
           src={item.image}
           alt="mkhuzo zulu's portfolio"
-          className="rounded-lg object-cover cursor-pointer transition-transform duration-100 delay-75 hover:scale-105"
+          className="rounded-lg object-cover cursor-pointer transition-transform duration-100 delay-75 lg:hover:scale-105"
           width={"100%"}
           height={"100%"} // layout="responsive"
         />

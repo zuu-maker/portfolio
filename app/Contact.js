@@ -66,7 +66,7 @@ function Contact({}) {
               <input
                 name="name"
                 type="text"
-                className="block w-full p-2 border-1 border-indigo-white/100  h-10 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-gray-900 dark:placeholder:text-gray-200 "
+                className="block w-full p-2   h-10 text-gray-900 shadow appearance-none border rounded py-2 px-3  leading-tight focus:outline-none focus:shadow-outline sm:text-sm sm:leading-6 dark:text-white dark:bg-gray-900 dark:placeholder:text-gray-200 "
               />
             </div>
           </div>
@@ -79,7 +79,7 @@ function Contact({}) {
               <input
                 name="email"
                 type="email"
-                className="block w-full p-2 border-1 border-indigo-white/100  h-10 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-gray-900 dark:placeholder:text-gray-200"
+                className="block w-full p-2  h-10 text-gray-900 shadow-sm ring-1 ring-inset ring-2 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-gray-900 dark:placeholder:text-gray-200"
               />
             </div>
           </div>
@@ -92,7 +92,7 @@ function Contact({}) {
               <input
                 name="subject"
                 type="text"
-                className="block w-full p-2 border-1 border-indigo-white/100  h-10 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-gray-900 dark:placeholder:text-gray-200"
+                className="block w-full p-2   h-10 text-gray-900 shadow-sm  ring-inset ring-2 ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-white dark:bg-gray-900 dark:placeholder:text-gray-200"
               />
             </div>
           </div>
@@ -105,7 +105,7 @@ function Contact({}) {
               <textarea
                 name="message"
                 rows={14}
-                className="block w-full border-1 border-indigo-white/100  dark:bg-gray-900 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-white"
+                className="block w-full   dark:bg-gray-900 p-2 text-gray-900 shadow-sm ring-2 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:text-white"
                 defaultValue={""}
               />
             </div>

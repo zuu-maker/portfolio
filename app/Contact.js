@@ -48,7 +48,7 @@ function Contact({}) {
         {/* form */}
         <form
           onSubmit={sendMail}
-          className="flex py-10 flex-col gap-3 items-center mx-auto w-4/5  lg:w-1/2"
+          className="flex py-10 flex-col gap-3 items-center mx-auto w-5/6  lg:w-1/2"
         >
           <div className="w-full flex items-center gap-16 flex-col lg:flex-row">
             <div className="w-12 text-5xl justify-center gap-16 py-3 text-gray-600 dark:text-gray-400 hidden lg:flex">

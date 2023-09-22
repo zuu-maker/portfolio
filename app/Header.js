@@ -21,7 +21,7 @@ function Header({ setDarkMode, darkMode }) {
           <li>
             <a
               className="bg-gradient-to-r flex items-center gap-1 from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-              href="https://firebasestorage.googleapis.com/v0/b/resume-903bf.appspot.com/o/pdf%2Fupdated_cv.pdf?alt=media&token=c81206d6-b021-4b1b-9fac-6300dd4588ba"
+              href="https://firebasestorage.googleapis.com/v0/b/resume-903bf.appspot.com/o/pdf%2Fupdated_resume.pdf?alt=media&token=fef1237e-d4a6-41f7-8be2-75a4510842b3"
               target="__blank"
             >
               <span>Resume</span>

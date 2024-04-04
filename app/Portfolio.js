@@ -6,7 +6,7 @@ import web4 from "../public/portfolio/web4.png";
 import web5 from "../public/portfolio/web5.png";
 import web6 from "../public/portfolio/web6.png";
 import web7 from "../public/portfolio/web7.png";
-import web8 from "../public/portfolio/web8.png";
+import web9 from "../public/portfolio/web9.png";
 import Reveal from "./Reveal";
 import RevealImages from "./RevealImages";
 
@@ -15,9 +15,24 @@ const portfolioItems = [
     title: "Sirius Educational Trust",
     description:
       "This a learning managment system that connects teachers and students, students subscribe monthly to teachers and courses of their choice.",
-    demo: "https://set-landing-site.vercel.app/",
+    demo: "https://www.set.edu.zm/",
     code: "",
     image: web1,
+  },
+  {
+    title: "Lungisa Qutation Manager",
+    description:
+      "This application helps quicken the quotation making process providing a beter experience for customers.",
+    demo: "https://quotation.lungisasolutions.com/",
+    code: "",
+    image: web5,
+  },
+  {
+    title: "Lungisa Webiste",
+    description: "Lungisa solutions landing page.",
+    demo: "https://lungisasolutions.com/",
+    code: "",
+    image: web9,
   },
   {
     title: "Healthy Heels",
@@ -43,14 +58,7 @@ const portfolioItems = [
     code: "",
     image: web4,
   },
-  {
-    title: "Lungisa Qutation Manager",
-    description:
-      "This application helps quicken the quotation making process providing a beter experience for customers.",
-    demo: "",
-    code: "",
-    image: web5,
-  },
+
   {
     title: "Tesla Clone",
     description: "This is a clone if the tesla website.",
@@ -64,13 +72,6 @@ const portfolioItems = [
     demo: "https://document-manager-7af8f.web.app/",
     code: "",
     image: web7,
-  },
-  {
-    title: "Set Studio",
-    description: "A web design for a tech startup company.",
-    demo: "https://set-studio.vercel.app/",
-    code: "",
-    image: web8,
   },
 ];
 

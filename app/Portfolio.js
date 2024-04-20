@@ -22,7 +22,7 @@ const portfolioItems = [
   {
     title: "Lungisa Qutation Manager",
     description:
-      "This application helps quicken the quotation making process providing a beter experience for customers.",
+      "This application helps quicken the quotation making process providing a better experience for customers.",
     demo: "https://quotation.lungisasolutions.com/",
     code: "",
     image: web5,

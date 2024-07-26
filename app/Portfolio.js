@@ -75,14 +75,14 @@ const portfolioItems = [
   },
 ];
 
-function Portfolio({ setOpen, setCurrent }) {
+function Portfolio({ setOpen, setCurrent, portfolioRef }) {
   const handleClick = (item) => {
     setCurrent(item);
     setOpen(true);
   };
 
   return (
-    <section>
+    <section ref={portfolioRef} id="portfolio">
       <div>
         <Reveal>
           <h3 className="text-2xl sm:text-3xl font-bold py-1 dark:text-white">
@@ -121,7 +121,7 @@ function PortfolioItem({ item, handleClick }) {
         <Image
           src={item.image}
           alt="mkhuzo zulu's portfolio"
-          className="rounded-lg object-cover cursor-pointer transition-transform duration-100 delay-75 lg:hover:scale-105"
+          className="rounded-md object-cover cursor-pointer transition-transform duration-100 delay-75 lg:hover:scale-105"
           width={"100%"}
           height={"100%"} // layout="responsive"
         />

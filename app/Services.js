@@ -27,9 +27,9 @@ const services = [
   },
 ];
 
-function Services({}) {
+function Services({ servicesRef }) {
   return (
-    <section>
+    <section ref={servicesRef} id="services">
       <Reveal>
         <h3 className="text-2xl sm:text-3xl font-bold py-1 dark:text-white ">
           Services

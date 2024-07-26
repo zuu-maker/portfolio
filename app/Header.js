@@ -6,9 +6,9 @@ import Image from "next/image";
 import Reveal from "./Reveal";
 import RevealImages from "./RevealImages";
 
-function Header({ setDarkMode, darkMode }) {
+function Header({ setDarkMode, darkMode, homeRef }) {
   return (
-    <section className=" min-h-screen pb-6">
+    <section ref={homeRef} id="home" className=" w-full pb-6">
       <nav className="py-10 sm:mb-12 flex justify-between dark:text-white  ">
         <h1 className="text-xl font-burtons hidden sm:block">Mkhuzo</h1>
         <ul className="flex items-center justify-between w-full sm:w-fit md:justify-normal">
@@ -74,6 +74,7 @@ function Header({ setDarkMode, darkMode }) {
           </div>
         </RevealImages>
       </div>
+
       <RevealImages>
         <div className="relative mx-auto flex items-center justify-center bg-gradient-to-b from-teal-500 rounded-full w-60 h-60 md:h-96 md:w-96 overflow-hidden ">
           <Image

@@ -2,7 +2,7 @@ import { AiFillGithub, AiOutlineMail, AiOutlineDownload } from "react-icons/ai";
 import emailjs from "emailjs-com";
 import Reveal from "./Reveal";
 
-function Contact({}) {
+function Contact({ contactRef }) {
   const sendMail = (e) => {
     e.preventDefault();
     emailjs
@@ -23,7 +23,7 @@ function Contact({}) {
     e.target.reset();
   };
   return (
-    <section>
+    <section ref={contactRef} id="contact">
       <div className=" pb-20">
         <div>
           <Reveal>

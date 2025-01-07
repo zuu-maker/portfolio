@@ -26,7 +26,7 @@ function Header({
             <>
               <span className="sr-only">Close main menu</span>
               <XMarkIcon
-                className="h-6 w-6 transition-transform duration-200 ease-in-out transform rotate-90"
+                className="h-6 w-6 text-gray-700 dark:text-gray-200 transition-transform duration-200 ease-in-out transform rotate-90"
                 aria-hidden="true"
               />
             </>
@@ -34,7 +34,7 @@ function Header({
             <>
               <span className="sr-only">Open main menu</span>
               <Bars3Icon
-                className="h-6 w-6 transition-transform duration-200 ease-in-out"
+                className="h-6 w-6 text-gray-700 dark:text-gray-200 transition-transform duration-200 ease-in-out"
                 aria-hidden="true"
               />
             </>
@@ -50,7 +50,7 @@ function Header({
           <li>
             <a
               className="bg-gradient-to-r flex items-center gap-1 from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-              href="https://firebasestorage.googleapis.com/v0/b/resume-903bf.appspot.com/o/pdf%2Fupdated_resume.pdf?alt=media&token=fef1237e-d4a6-41f7-8be2-75a4510842b3&_gl=1*1rjgszj*_ga*MjEwMzU0NzU4MC4xNjc2NzIxODIy*_ga_CW55HF8NVT*MTY5NTg4MDM3NC40NC4xLjE2OTU4ODA2MzUuNjAuMC4w"
+              href="https://firebasestorage.googleapis.com/v0/b/healthy-heels.appspot.com/o/mkhuzo%20resume.pdf?alt=media&token=e4551524-c804-4efa-b799-bbf969deeb55"
               target="__blank"
             >
               <span>Resume</span>

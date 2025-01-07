@@ -12,6 +12,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const [current, setCurrent] = useState({});
   const [activeLink, setActiveLink] = useState("");
+  const [showSidebar, setShowSidebar] = useState(false);
 
   const handleClick = (section) => {
     setActiveLink(section);
@@ -49,13 +50,19 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`${darkMode ? "dark" : ""}  `}>
+    <div className={`${darkMode ? "dark" : ""}  relative`}>
       <link rel="icon" href="/portfolio/favicon.ico" sizes="any" />
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 w-full font-source-sans">
-        <Sidebar handleClick={handleClick} activeLink={activeLink} />
+        <Sidebar
+          showSidebar={showSidebar}
+          handleClick={handleClick}
+          activeLink={activeLink}
+        />
         <Modal open={open} setOpen={setOpen} current={current} />
-        <div className="xl:ml-[375px]">
+        <div className={`${showSidebar && "xl:ml-[150px]"}`}>
           <Header
+            setShowSidebar={setShowSidebar}
+            showSidebar={showSidebar}
             homeRef={homeRef}
             setDarkMode={setDarkMode}
             darkMode={darkMode}

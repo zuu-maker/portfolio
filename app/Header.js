@@ -5,13 +5,42 @@ import { AiFillGithub, AiOutlineDownload } from "react-icons/ai";
 import Image from "next/image";
 import Reveal from "./Reveal";
 import RevealImages from "./RevealImages";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-function Header({ setDarkMode, darkMode, homeRef }) {
+function Header({
+  setDarkMode,
+  darkMode,
+  homeRef,
+  setShowSidebar,
+  showSidebar,
+}) {
   return (
     <section ref={homeRef} id="home" className=" w-full pb-6">
-      <nav className="py-10 sm:mb-12 flex justify-between dark:text-white  ">
-        <h1 className="text-xl font-burtons hidden sm:block">Mkhuzo</h1>
-        <ul className="flex items-center justify-between w-full sm:w-fit md:justify-normal">
+      <nav className="py-10 sm:mb-12 xl:flex justify-between dark:text-white  ">
+        <button
+          type="button"
+          className="hidden xl:inline-flex sm:-m-2.5  items-center justify-center rounded-md p-2.5 text-gray-200"
+          onClick={() => setShowSidebar(!showSidebar)}
+        >
+          {showSidebar ? (
+            <>
+              <span className="sr-only">Close main menu</span>
+              <XMarkIcon
+                className="h-6 w-6 transition-transform duration-200 ease-in-out transform rotate-90"
+                aria-hidden="true"
+              />
+            </>
+          ) : (
+            <>
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon
+                className="h-6 w-6 transition-transform duration-200 ease-in-out"
+                aria-hidden="true"
+              />
+            </>
+          )}
+        </button>
+        <ul className="flex items-center justify-between w-full xl:w-fit  xl:justify-normal">
           <li>
             <BsFillMoonStarsFill
               onClick={() => setDarkMode(!darkMode)}

@@ -1,8 +1,12 @@
 import React from "react";
 
-function Sidebar({ activeLink, handleClick }) {
+function Sidebar({ activeLink, showSidebar }) {
   return (
-    <div className="hidden xl:flex shadow-2xl flex-col left-0 overflow-y-auto fixed text-right top-0 w-[375px] justify-between text-[#fff] h-screen bg-[#222629] dark:bg-gray-800">
+    <div
+      className={`z-5 xl:flex flex-col left-0 overflow-y-auto fixed text-right top-0 w-[340px] justify-between text-[#fff] h-screen bg-[#222629] dark:bg-gray-800  shadow-lg transform transition-transform duration-300 ease-in-out ${
+        showSidebar ? "translate-x-0" : "-translate-x-full"
+      } `}
+    >
       <div className="flex-grow relative">
         <div className="relative cursor-default m-h-[45px] mt-7 leading-none mb-6 mx-6">
           <span className="absolute top-0 left-0 w-12 h-12 ">

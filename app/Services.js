@@ -30,26 +30,32 @@ const services = [
 function Services({ servicesRef }) {
   return (
     <section ref={servicesRef} id="services">
-      <Reveal>
-        <h3 className="text-2xl sm:text-3xl font-bold py-1 dark:text-white ">
-          Services
-        </h3>
-      </Reveal>
-      <Reveal>
-        <p className=" text-sm sm:text-base py-2 leading-5 sm:leading-8 text-gray-600 dark:text-gray-200">
-          Welcome to my services. As a full stack developer,{" "}
-          <span className="text-teal-500">
-            I offer a wide range of services
-          </span>{" "}
-          to help you bring your digital projects to life. Here's how I can
-          assist you:
-        </p>
-      </Reveal>
-      {/* <RevealImages> */}
-      <div className="lg:flex lg:gap-10 lg:justify-center w-full">
-        {services.map((service) => (
-          <ServicesItem key={service.title} src={service.src} item={service} />
-        ))}
+      <div className="max-w-7xl mx-auto">
+        <Reveal>
+          <h3 className="text-2xl sm:text-3xl font-bold py-1 dark:text-white ">
+            Services
+          </h3>
+        </Reveal>
+        <Reveal>
+          <p className=" text-sm sm:text-base py-2 leading-5 sm:leading-8 text-gray-600 dark:text-gray-200">
+            Welcome to my services. As a full stack developer,{" "}
+            <span className="text-teal-500">
+              I offer a wide range of services
+            </span>{" "}
+            to help you bring your digital projects to life. Here's how I can
+            assist you:
+          </p>
+        </Reveal>
+        {/* <RevealImages> */}
+        <div className="lg:flex lg:gap-10 lg:justify-center w-full">
+          {services.map((service) => (
+            <ServicesItem
+              key={service.title}
+              src={service.src}
+              item={service}
+            />
+          ))}
+        </div>
       </div>
       {/* </RevealImages> */}
     </section>

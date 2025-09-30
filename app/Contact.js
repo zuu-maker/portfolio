@@ -24,7 +24,7 @@ function Contact({ contactRef }) {
   };
   return (
     <section ref={contactRef} id="contact">
-      <div className=" pb-20">
+      <div className=" pb-20 max-w-7xl mx-auto">
         <div>
           <Reveal>
             <h3 className="text-2xl sm:text-3xl font-bold py-1 dark:text-white">

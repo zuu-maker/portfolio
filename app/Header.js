@@ -50,7 +50,7 @@ function Header({
           <li>
             <a
               className="bg-gradient-to-r flex items-center gap-1 from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-              href="https://firebasestorage.googleapis.com/v0/b/healthy-heels.appspot.com/o/mkhuzo%20resume.pdf?alt=media&token=e4551524-c804-4efa-b799-bbf969deeb55"
+              href="https://firebasestorage.googleapis.com/v0/b/resume-903bf.appspot.com/o/pdf%2Fmkhuzo_zulu_cv.pdf?alt=media&token=ffdf9901-2c62-4d4b-890f-430009e8b9b1"
               target="__blank"
             >
               <span>Resume</span>
